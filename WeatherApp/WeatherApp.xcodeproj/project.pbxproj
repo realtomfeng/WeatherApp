@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		CF2A765DCD52334CC85742BB /* Pods_WeatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A8A31428B763308129084A /* Pods_WeatherApp.framework */; };
+		E2075F31233BB94E00C5A1E7 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2075F30233BB94E00C5A1E7 /* WeatherCell.swift */; };
+		E24212AB233A6A7200F148D2 /* DarkSkyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24212AA233A6A7200F148D2 /* DarkSkyAPI.swift */; };
+		E24212AD233A6FA100F148D2 /* WeatherStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24212AC233A6FA100F148D2 /* WeatherStore.swift */; };
+		E24CD463233C40E60001E809 /* ForecastDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24CD462233C40E60001E809 /* ForecastDetailViewController.swift */; };
+		E2520DCC233A90D300315660 /* DarkSkyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2520DCB233A90D300315660 /* DarkSkyData.swift */; };
 		E292B8B2233A5C5D00D8526E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E292B8B1233A5C5D00D8526E /* AppDelegate.swift */; };
 		E292B8B4233A5C5D00D8526E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E292B8B3233A5C5D00D8526E /* SceneDelegate.swift */; };
 		E292B8B6233A5C5D00D8526E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E292B8B5233A5C5D00D8526E /* ViewController.swift */; };
@@ -20,6 +25,11 @@
 		4969ABBAF4DB68C5B4289528 /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		4AE27FEBDF17C87F1809075A /* Pods-WeatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherApp/Pods-WeatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 		72A8A31428B763308129084A /* Pods_WeatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2075F30233BB94E00C5A1E7 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		E24212AA233A6A7200F148D2 /* DarkSkyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyAPI.swift; sourceTree = "<group>"; };
+		E24212AC233A6FA100F148D2 /* WeatherStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStore.swift; sourceTree = "<group>"; };
+		E24CD462233C40E60001E809 /* ForecastDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastDetailViewController.swift; sourceTree = "<group>"; };
+		E2520DCB233A90D300315660 /* DarkSkyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkSkyData.swift; sourceTree = "<group>"; };
 		E292B8AE233A5C5D00D8526E /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E292B8B1233A5C5D00D8526E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E292B8B3233A5C5D00D8526E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +69,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E2075F2F233BB93900C5A1E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2075F30233BB94E00C5A1E7 /* WeatherCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E24CD461233C40CE0001E809 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E292B8B5233A5C5D00D8526E /* ViewController.swift */,
+				E24CD462233C40E60001E809 /* ForecastDetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E2520DCA233A90C200315660 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2520DCB233A90D300315660 /* DarkSkyData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E292B8A5233A5C5D00D8526E = {
 			isa = PBXGroup;
 			children = (
@@ -80,13 +115,17 @@
 		E292B8B0233A5C5D00D8526E /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				E24CD461233C40CE0001E809 /* ViewController */,
+				E2075F2F233BB93900C5A1E7 /* View */,
+				E2520DCA233A90C200315660 /* Model */,
 				E292B8B1233A5C5D00D8526E /* AppDelegate.swift */,
 				E292B8B3233A5C5D00D8526E /* SceneDelegate.swift */,
-				E292B8B5233A5C5D00D8526E /* ViewController.swift */,
 				E292B8B7233A5C5D00D8526E /* Main.storyboard */,
 				E292B8BA233A5C5E00D8526E /* Assets.xcassets */,
 				E292B8BC233A5C5E00D8526E /* LaunchScreen.storyboard */,
 				E292B8BF233A5C5E00D8526E /* Info.plist */,
+				E24212AA233A6A7200F148D2 /* DarkSkyAPI.swift */,
+				E24212AC233A6FA100F148D2 /* WeatherStore.swift */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -213,8 +252,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E24212AD233A6FA100F148D2 /* WeatherStore.swift in Sources */,
 				E292B8B6233A5C5D00D8526E /* ViewController.swift in Sources */,
 				E292B8B2233A5C5D00D8526E /* AppDelegate.swift in Sources */,
+				E24212AB233A6A7200F148D2 /* DarkSkyAPI.swift in Sources */,
+				E2520DCC233A90D300315660 /* DarkSkyData.swift in Sources */,
+				E2075F31233BB94E00C5A1E7 /* WeatherCell.swift in Sources */,
+				E24CD463233C40E60001E809 /* ForecastDetailViewController.swift in Sources */,
 				E292B8B4233A5C5D00D8526E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
