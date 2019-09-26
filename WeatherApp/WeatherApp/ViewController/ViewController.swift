@@ -32,6 +32,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! WeatherCell
         cell.tempLabel.text = String(forecast.temperatureHigh)
         cell.imageView.image = forecast.image
+        cell.date.text = forecast.date
             return cell
     }
     

@@ -19,6 +19,7 @@
 		E292B8B9233A5C5D00D8526E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E292B8B7233A5C5D00D8526E /* Main.storyboard */; };
 		E292B8BB233A5C5E00D8526E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E292B8BA233A5C5E00D8526E /* Assets.xcassets */; };
 		E292B8BE233A5C5E00D8526E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E292B8BC233A5C5E00D8526E /* LaunchScreen.storyboard */; };
+		E2EBA527233D065000AB2135 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EBA526233D065000AB2135 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		E292B8BA233A5C5E00D8526E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E292B8BD233A5C5E00D8526E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E292B8BF233A5C5E00D8526E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2EBA526233D065000AB2135 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		E292B8B0233A5C5D00D8526E /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				E2EBA526233D065000AB2135 /* Extensions.swift */,
 				E24CD461233C40CE0001E809 /* ViewController */,
 				E2075F2F233BB93900C5A1E7 /* View */,
 				E2520DCA233A90C200315660 /* Model */,
@@ -253,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E24212AD233A6FA100F148D2 /* WeatherStore.swift in Sources */,
+				E2EBA527233D065000AB2135 /* Extensions.swift in Sources */,
 				E292B8B6233A5C5D00D8526E /* ViewController.swift in Sources */,
 				E292B8B2233A5C5D00D8526E /* AppDelegate.swift in Sources */,
 				E24212AB233A6A7200F148D2 /* DarkSkyAPI.swift in Sources */,

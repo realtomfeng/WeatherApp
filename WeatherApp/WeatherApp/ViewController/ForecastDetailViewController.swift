@@ -15,6 +15,7 @@ class ForecastDetailViewController: UIViewController {
     @IBOutlet var temp: UILabel!
     @IBOutlet var summary: UILabel!
     @IBOutlet var image: UIImageView!
+    @IBOutlet var date: UILabel!
     
     var forecast: Forecast!
     
@@ -22,6 +23,7 @@ class ForecastDetailViewController: UIViewController {
         temp.text = String(forecast.temperatureHigh)
         summary.text = forecast.summary
         image.image = forecast.image
+        date.text = forecast.date
     }
     
     

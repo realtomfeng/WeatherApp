@@ -26,6 +26,10 @@ struct currentForecast: Codable {
 }
 
 struct Forecast: Codable {
+    var time: Int
+    var date: String {
+        return Int.getDateText(time)
+    }
     var summary: String
     var temperatureHigh: Double
     var temperatureLow: Double
@@ -43,7 +47,7 @@ struct Forecast: Codable {
         case "clear-day":
             return UIImage(named: "sun")!
         default:
-            return UIImage(named: "")!
+            return UIImage(named: "sun")!
         }
     }
 }

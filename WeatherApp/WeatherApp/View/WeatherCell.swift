@@ -11,13 +11,10 @@ import UIKit
 
 class WeatherCell: UICollectionViewCell {
     
+    @IBOutlet var date: UILabel!
     @IBOutlet var tempLabel: UILabel!
     @IBOutlet var imageView: UIImageView!
     
     var forecast: Forecast!
     
-//    func viewDidLoad() {
-//        tempLabel.text = String(forecast.temperatureHigh)
-//        imageView.image = forecast.image
-//    }
 }
